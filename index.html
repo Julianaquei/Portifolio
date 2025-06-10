@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Juliana - Desenvolvedora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Juliana</h1>
+            <h2>Desenvolvedora</h2>
+            <div class="social-icons">
+                <a href="https://github.com/Julianaquei"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-content">
+                
+                <div class="bio">
+                    <p>Olá! Meu nome é Juliana, sou dev desde os 16, comecei a programar pois entrei para a etec.</p>
+               
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="projects-grid" id="projects-container">
+                <!-- Projetos serão inseridos via JavaScript -->
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Minhas Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Front-end</h3>
+                    <div class="skill" data-level="90"><span>HTML/CSS</span></div>
+                    <div class="skill" data-level="85"><span>JavaScript</span></div>
+                    <div class="skill" data-level="80"><span>React Native</span></div>
+                </div>
+                <div class="skill-category">
+                    <h3>Back-end</h3>
+                    <div class="skill" data-level="75"><span>Node.js</span></div>
+                  
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Vamos Conversar</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="nome" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> Juliana. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
